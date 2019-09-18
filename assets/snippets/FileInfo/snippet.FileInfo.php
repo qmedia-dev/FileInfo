@@ -12,7 +12,7 @@ $path_parts = pathinfo($file_path);
 $template = isset($tpl) ? $tpl : '[+basename+] ([+size+])';
 
 $dirname    = $path_parts['dirname'] ? $path_parts['dirname'] : '';
-$basename   = $path_parts['basename'] ? $path_parts['basename'] : '';
+$basename   = pathinfo($file)['basename'] ? pathinfo($file)['basename'] : '';
 $extension  = $path_parts['extension'] ? $path_parts['extension'] : '';
 $filename   = $path_parts['filename'] ? $path_parts['filename'] : '';
 
