@@ -21,8 +21,7 @@ _Сниппет для Evolution CMS_
 
 ## Плейсхолдеры
 
-- `[+file+]` -- **полный путь к файлу** : assets/files/test-file.pdf
-- `[+dirname+]` -- **путь к папке с файлом** : assets/files
+- `[+file+]` -- **путь к файлу** : assets/files/test-file.pdf
 - `[+basename+]` -- **имя файла (с расширением)** : test-file.pdf
 - `[+filename+]` -- **имя файла (без расширения)** : test-file
 - `[+extension+]` -- **расширение файла** : pdf

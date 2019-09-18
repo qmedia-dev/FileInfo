@@ -11,7 +11,6 @@ $file_path = MODX_BASE_PATH . $file;
 $path_parts = pathinfo($file_path);
 $template = isset($tpl) ? $tpl : '[+basename+] ([+size+])';
 
-$dirname    = $path_parts['dirname'] ? $path_parts['dirname'] : '';
 $basename   = pathinfo($file)['basename'] ? pathinfo($file)['basename'] : '';
 $extension  = $path_parts['extension'] ? $path_parts['extension'] : '';
 $filename   = $path_parts['filename'] ? $path_parts['filename'] : '';
@@ -33,7 +32,6 @@ $size = round($size, 2) . '&nbsp;' . $units[$unit]['label'];
 
 $placeholders = array(
     'file' => $file,
-    'dirname' => $dirname,
     'basename' => $basename,
     'filename' => $filename,
     'extension' => $extension,
