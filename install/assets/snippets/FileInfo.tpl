@@ -28,7 +28,7 @@
  */
 
 /* Usage -------------------------------
-[[Fileinfo?
+[[FileInfo?
 &file=`assets/files/test-file.pdf`
 &tpl=`<a href="[+file+]" download>[+basename+] ([+size+])</a>`
 ]]

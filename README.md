@@ -1,11 +1,11 @@
-# DateFormat
+# FileInfo
 
 _Сниппет для Evolution CMS_
 
 Выводит информацию о файле.
 
 ```
-[[Fileinfo?
+[[FileInfo?
 &file=`assets/files/test-file.pdf`
 &tpl=`<a href="[+file+]" download>[+basename+] ([+size+])</a>`
 ]]
