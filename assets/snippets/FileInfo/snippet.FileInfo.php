@@ -8,6 +8,10 @@ $units = array(
 );
 
 $file_path = MODX_BASE_PATH . $file;
+if (is_file($file_path) === false) {
+    return 'Файл не найден';
+}
+
 $path_parts = pathinfo($file_path);
 $template = isset($tpl) ? $tpl : '[+basename+] ([+size+])';
 
