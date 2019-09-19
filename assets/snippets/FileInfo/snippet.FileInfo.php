@@ -35,11 +35,11 @@ if ($size > 0) {
 $size = round($size, 2) . '&nbsp;' . $units[$unit]['label'];
 
 $placeholders = array(
-    'file' => $file,
+    'path' => $file,
     'basename' => $basename,
-    'filename' => $filename,
+    'name' => $filename,
     'extension' => $extension,
     'size' => $size
 );
 
-return $modx->parseText($template, $placeholders, '[+', '+]');
+return $modx->parseText($template, $placeholders, '[+file.', '+]');
